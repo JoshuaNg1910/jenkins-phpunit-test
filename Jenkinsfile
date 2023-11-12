@@ -5,11 +5,6 @@ pipeline {
 		}
 	}
 	stages {
-                stage('Checkout SCM') {
-                        steps {
-                                git 'https://github.com/JoshuaNg1910/jenkins-phpunit-test'
-                        }
-                }
 		stage('Build') {
 			steps {
 				sh 'composer install'
